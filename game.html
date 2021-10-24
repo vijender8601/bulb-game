@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h1 style="align:center;">Bulb Game</h1>
+        <img id="game" src="bulb.gif" width="200" height="200">
+        <p>
+        <button type="button" onclick="myfunction(0)">Light on 1</button>
+        <button type="button" onclick="myfunction(0)">Light on 2</button>
+        <button type="button" onclick="myfunction(1)">Light on 3</button>
+        <button type="button" onclick="myfunction(0)">Light on 4</button>
+        <button type="button" onclick="myfunction(0)">Light on 5</button>
+        </p>
+        <script>
+            function myfunction(val)
+            {
+                var image;
+                if(val==1)
+                {
+                    image = "bulb2.gif";
+                    document.getElementById("game").src=image;
+                    alert("you win");
+                }
+                else 
+                {
+                    alert("You lose");
+                }
+            }
+        </script>
+    </body>
+</html>
